@@ -36,3 +36,25 @@
   color: #111111;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .example__wrapper--table {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__wrapper--table {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .example__wrapper {
+    display: flex;
+  }
+
+  .example__price {
+    text-align: start;
+  }
+}

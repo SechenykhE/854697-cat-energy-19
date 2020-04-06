@@ -4,11 +4,14 @@
   margin-right: auto;
 }
 
-.container--promo {
-  height: 305px;
-  background-color: #63a73a;
-  background-image: url("/../../img/index-background-mobile@1x.jpg");
-  background-size: auto 305px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
+@media (min-width: @tablet-width) {
+  .container {
+    width: 708px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1220px;
+  }
 }

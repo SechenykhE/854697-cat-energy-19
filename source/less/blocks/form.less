@@ -34,3 +34,25 @@
   height: 45px;
   border: 1px solid rgba(205 205 205 0.5);
 }
+
+@media (min-width: @tablet-width) {
+  .form__list--add {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__item {
+    width: 285px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__list--contact {
+    display: flex;
+  }
+}

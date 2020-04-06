@@ -4,11 +4,8 @@
   width: 280px;
   padding: 10px;
 
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Oswald", "Arial", sans-serif;
+  .f-oswald (14px, 18px);
   color: #ffffff;
-  font-weight: normal;
   text-transform: uppercase;
   text-align: center;
 
@@ -19,4 +16,16 @@
 .button--all {
   background-color: #f2f2f2;
   color: #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .button--extra {
+    width: 633px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button {
+    width: 169px;
+  }
 }
