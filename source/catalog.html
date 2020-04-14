@@ -12,17 +12,17 @@
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Cat energy">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
+            <a class="site-list__link site-list__link--inner" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link">Каталог продукции</a>
+            <a class="site-list__link site-list__link--inner site-list__link--active">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
+            <a class="site-list__link site-list__link--inner" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -31,228 +31,221 @@
 
   <main class="page-main">
     <h1 class="page-main__title container">Каталог продукции</h1>
-    <section class="catalog container">
+    <section class="catalog">
       <h2 class="visually-hidden">Каталог</h2>
       <ul class="catalog__list">
-        <li class="catalog__item сard-product">
-          <div class="сard-product__wrapper">
-            <a href="#">
-              <img class="сard-product__image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500г Курица">
+        <li class="catalog__item product">
+          <div class="product__wrapper">
+            <a class="product__link" href="#">
+              <img class="product__image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500г Курица">
             </a>
             <div>
-              <h3>
+              <h3 class="product__title">
                 <a href="#">
-                  <span class="сard-product__title">Cat Energy</span>
-                  <span class="сard-product__title">PRO 500 г</span>
+                  <span class="product__subtitle">Cat Energy PRO 500 г</span>
                 </a>
               </h3>
-              <table class="сard-product__list">
+              <table class="product__list">
                 <tr>
-                  <td class="сard-product__desc">Объем</td>
-                  <td class="сard-product__value">500 г</td>
+                  <td class="product__desc">Объем</td>
+                  <td class="product__value">500 г</td>
                 </tr>
                 <tr>
-                  <td class="сard-product__desc">Вкус</td>
-                  <td class="сard-product__value">Курица</td>
+                  <td class="product__desc">Вкус</td>
+                  <td class="product__value">Курица</td>
                 </tr>
                 <tr>
-                  <td class="сard-product__desc">Цена</td>
-                  <td class="сard-product__value">700 Р.</td>
+                  <td class="product__desc">Цена</td>
+                  <td class="product__value">700 Р.</td>
                 </tr>
               </table>
             </div>
           </div>
-          <a class="button сard-product__button" href="#">Заказать</a>
+          <a class="button product__button" href="#">Заказать</a>
         </li>
-        <li class="catalog__item сard-product">
-          <div class="сard-product__wrapper">
+        <li class="catalog__item product">
+          <div class="product__wrapper">
             <a href="#">
-              <img class="сard-product__image" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000г Курица">
+              <img class="product__image product__image--big" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000г Курица">
             </a>
             <div>
-              <h3>
+              <h3 class="product__title">
                 <a href="#">
-                  <span class="сard-product__title">Cat Energy</span>
-                  <span class="сard-product__title">PRO 1000 г</span>
+                  <span class="product__subtitle">Cat Energy PRO 1000 г</span>
                 </a>
               </h3>
-              <table class="сard-product__list">
+              <table class="product__list">
                 <tr>
-                  <td class="сard-product__desc">Объем</td>
-                  <td class="сard-product__value">1000 г</td>
+                  <td class="product__desc">Объем</td>
+                  <td class="product__value">1000 г</td>
                 </tr>
                 <tr>
-                  <td class="сard-product__desc">Вкус</td>
-                  <td class="сard-product__value">Курица</td>
+                  <td class="product__desc">Вкус</td>
+                  <td class="product__value">Курица</td>
                 </tr>
                 <tr>
-                  <td class="сard-product__desc">Цена</td>
-                  <td class="сard-product__value">1000 Р.</td>
+                  <td class="product__desc">Цена</td>
+                  <td class="product__value">1000 Р.</td>
                 </tr>
               </table>
             </div>
           </div>
-          <a class="button сard-product__button" href="#">Заказать</a>
+          <a class="button product__button" href="#">Заказать</a>
         </li>
-        <li class="catalog__item сard-product">
-          <div class="сard-product__wrapper">
+        <li class="catalog__item product">
+          <div class="product__wrapper">
             <a href="#">
-              <img class="сard-product__image" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500г рыба">
+              <img class="product__image" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500г рыба">
             </a>
             <div>
-              <h3>
+              <h3 class="product__title">
                 <a href="#">
-                  <span class="сard-product__title">Cat Energy</span>
-                  <span class="сard-product__title">PRO 500 г</span>
+                  <span class="product__subtitle">Cat Energy PRO 500 г</span>
                 </a>
               </h3>
-              <table class="сard-product__list">
+              <table class="product__list">
                 <tr>
-                  <td class="сard-product__desc">Объем</td>
-                  <td class="сard-product__value">500 г</td>
+                  <td class="product__desc">Объем</td>
+                  <td class="product__value">500 г</td>
                 </tr>
                 <tr>
-                  <td class="сard-product__desc">Вкус</td>
-                  <td class="сard-product__value">Рыба</td>
+                  <td class="product__desc">Вкус</td>
+                  <td class="product__value">Рыба</td>
                 </tr>
                 <tr>
-                  <td class="сard-product__desc">Цена</td>
-                  <td class="сard-product__value">700 Р.</td>
+                  <td class="product__desc">Цена</td>
+                  <td class="product__value">700 Р.</td>
                 </tr>
               </table>
             </div>
           </div>
-          <a class="button сard-product__button" href="#">Заказать</a>
+          <a class="button product__button" href="#">Заказать</a>
         </li>
-        <li class="catalog__item сard-product">
-          <div class="сard-product__wrapper">
+        <li class="catalog__item product">
+          <div class="product__wrapper">
             <a href="#">
-              <img class="сard-product__image" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000г рыба">
+              <img class="product__image product__image--big" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000г рыба">
             </a>
             <div>
-              <h3>
+              <h3 class="product__title">
                 <a href="#">
-                  <span class="сard-product__title">Cat Energy</span>
-                  <span class="сard-product__title">PRO 1000 г</span>
+                  <span class="product__subtitle">Cat Energy PRO 1000 г</span>
                 </a>
               </h3>
-              <table class="сard-product__list">
+              <table class="product__list">
                 <tr>
-                  <td class="сard-product__desc">Объем</td>
-                  <td class="сard-product__value">1000 г</td>
+                  <td class="product__desc">Объем</td>
+                  <td class="product__value">1000 г</td>
                 </tr>
                 <tr>
-                  <td class="сard-product__desc">Вкус</td>
-                  <td class="сard-product__value">Рыба</td>
+                  <td class="product__desc">Вкус</td>
+                  <td class="product__value">Рыба</td>
                 </tr>
                 <tr>
-                  <td class="сard-product__desc">Цена</td>
-                  <td class="сard-product__value">1000 Р.</td>
+                  <td class="product__desc">Цена</td>
+                  <td class="product__value">1000 Р.</td>
                 </tr>
               </table>
             </div>
           </div>
-          <a class="button сard-product__button" href="#">Заказать</a>
+          <a class="button product__button" href="#">Заказать</a>
         </li>
-        <li class="catalog__item сard-product">
-          <div class="сard-product__wrapper">
+        <li class="catalog__item product">
+          <div class="product__wrapper">
             <a href="#">
-              <img class="сard-product__image" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy slim 500г гречка">
+              <img class="product__image" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy slim 500г гречка">
             </a>
             <div>
-              <h3>
+              <h3 class="product__title">
                 <a href="#">
-                  <span class="сard-product__title">Cat Energy</span>
-                  <span class="сard-product__title">Slim 500 г</span>
+                  <span class="product__subtitle">Cat Energy Slim 500 г</span>
                 </a>
               </h3>
-              <table class="сard-product__list">
+              <table class="product__list">
                 <tr>
-                  <td class="сard-product__desc">Объем</td>
-                  <td class="сard-product__value">500 г</td>
+                  <td class="product__desc">Объем</td>
+                  <td class="product__value">500 г</td>
                 </tr>
                 <tr>
-                  <td class="сard-product__desc">Вкус</td>
-                  <td class="сard-product__value">Гречка</td>
+                  <td class="product__desc">Вкус</td>
+                  <td class="product__value">Гречка</td>
                 </tr>
                 <tr>
-                  <td class="сard-product__desc">Цена</td>
-                  <td class="сard-product__value">400 Р.</td>
+                  <td class="product__desc">Цена</td>
+                  <td class="product__value">400 Р.</td>
                 </tr>
               </table>
             </div>
           </div>
-          <a class="button сard-product__button" href="#">Заказать</a>
+          <a class="button product__button" href="#">Заказать</a>
         </li>
-        <li class="catalog__item сard-product">
-          <div class="сard-product__wrapper">
+        <li class="catalog__item product">
+          <div class="product__wrapper">
             <a href="#">
-              <img class="сard-product__image" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy slim 1000г гречка">
+              <img class="product__image product__image--big" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy slim 1000г гречка">
             </a>
             <div>
-              <h3>
+              <h3 class="product__title">
                 <a href="#">
-                  <span class="сard-product__title">Cat Energy</span>
-                  <span class="сard-product__title">Slim 1000 г</span>
+                  <span class="product__subtitle">Cat Energy Slim 1000 г</span>
                 </a>
               </h3>
-              <table class="сard-product__list">
+              <table class="product__list">
                 <tr>
-                  <td class="сard-product__desc">Объем</td>
-                  <td class="сard-product__value">1000 г</td>
+                  <td class="product__desc">Объем</td>
+                  <td class="product__value">1000 г</td>
                 </tr>
                 <tr>
-                  <td class="сard-product__desc">Вкус</td>
-                  <td class="сard-product__value">Гречка</td>
+                  <td class="product__desc">Вкус</td>
+                  <td class="product__value">Гречка</td>
                 </tr>
                 <tr>
-                  <td class="сard-product__desc">Цена</td>
-                  <td class="сard-product__value">700 Р.</td>
+                  <td class="product__desc">Цена</td>
+                  <td class="product__value">700 Р.</td>
                 </tr>
               </table>
             </div>
           </div>
-          <a class="button сard-product__button" href="#">Заказать</a>
+          <a class="button product__button" href="#">Заказать</a>
         </li>
-        <li class="catalog__item сard-product">
-          <div class="сard-product__wrapper">
+        <li class="catalog__item product">
+          <div class="product__wrapper">
             <a href="#">
-              <img class="сard-product__image" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy slim 500г рис">
+              <img class="product__image" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy slim 500г рис">
             </a>
             <div>
-              <h3>
+              <h3 class="product__title">
                 <a href="#">
-                  <span class="сard-product__title">Cat Energy</span>
-                  <span class="сard-product__title">Slim 500 г</span>
+                  <span class="product__subtitle">Cat Energy Slim 500 г</span>
                 </a>
               </h3>
-              <table class="сard-product__list">
+              <table class="product__list">
                 <tr>
-                  <td class="сard-product__desc">Объем</td>
-                  <td class="сard-product__value">500 г</td>
+                  <td class="product__desc">Объем</td>
+                  <td class="product__value">500 г</td>
                 </tr>
                 <tr>
-                  <td class="сard-product__desc">Вкус</td>
-                  <td class="сard-product__value">Рис</td>
+                  <td class="product__desc">Вкус</td>
+                  <td class="product__value">Рис</td>
                 </tr>
                 <tr>
-                  <td class="сard-product__desc">Цена</td>
-                  <td class="сard-product__value">500 Р.</td>
+                  <td class="product__desc">Цена</td>
+                  <td class="product__value">500 Р.</td>
                 </tr>
               </table>
             </div>
           </div>
-          <a class="button сard-product__button" href="#">Заказать</a>
+          <a class="button product__button" href="#">Заказать</a>
         </li>
         <li class="catalog__item catalog__all catalog-all">
-          <p class="catalog-all__text-show">Показать еще 100500 товаров</p>
+          <p class="catalog-all__text-show">Показать еще <br>100500 товаров</p>
           <p class="catalog-all__text">На самом деле вкусов гораздо больше!</p>
           <a class="button button--all" href="#">Показать все</a>
         </li>
       </ul>
     </section>
 
-    <section class="extra container">
+    <section class="extra extra--top container">
       <h2 class="extra__title">Дополнительные товары</h2>
       <div class="extra__wrapper">
         <ul class="extra__list">
@@ -306,18 +299,21 @@
           </li>
         </ul>
         <div class="gift container">
-          <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
+          <p class="gift__text">Закажите все<br> и получите чехол для кота в подарок!</p>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <section class="contacts container">
+    <section class="contacts contacts--inner">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__wrapper">
-        <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contacts__wrapper container">
+        <p class="contacts__slogan">Приглашаем <br> к сотрудничеству дилеров!</p>
+        <div class="contacts__address">
+          <p class="contacts__address-street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="contacts__address-city">Санкт-Петербург</p>
+        </div>
       </div>
       <a class="contacts__link" href="https://goo.gl/maps/H6qak4BQScbTDNQX8">
         <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Наш офис по адресу улица Большая Конюшенная дом 19">
@@ -327,11 +323,9 @@
     <section class="footer-links">
       <div class="container footer-links__wrapper">
         <h2 class="visually-hidden">Ссылки</h2>
-        <div class="container">
-          <a class="page-footer__logo" href="index.html">
-            <img class="page-footer__logo-text" src="img/logo-footer.svg" width="128" height="24" alt="Cat energy">
-          </a>
-        </div>
+        <a class="page-footer__logo" href="index.html">
+          <img class="page-footer__logo-text" src="img/logo-footer.svg" width="128" height="24" alt="Cat energy">
+        </a>
 
         <div class="page-footer__social social container">
           <ul class="social__list">
@@ -376,7 +370,7 @@
           </ul>
         </div>
 
-        <div class="page-footer__copyright copyright container">
+        <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a class="copyright__image" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Academy">
             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 60 60">
@@ -390,5 +384,7 @@
       </div>
     </section>
   </footer>
+
+  <script src="js/sript.js"></script>
 </body>
 </html>

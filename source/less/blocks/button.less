@@ -1,31 +1,98 @@
 .button {
   display: block;
-  max-height: 40px;
   width: 280px;
-  padding: 10px;
+  height: 40px;
+  padding: 11px;
 
   .f-oswald (14px, 18px);
-  color: #ffffff;
   text-transform: uppercase;
   text-align: center;
+  color: #ffffff;
 
   background-color: #68b738;
   border: 0;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--all {
-  background-color: #f2f2f2;
   color: #444444;
+
+  background-color: #f2f2f2;
+}
+
+.button--all:hover,
+.button--all:focus {
+  background-color: #ebebeb;
+}
+
+.button--all:active {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.button__form {
+  margin-bottom: 20px;
 }
 
 @media (min-width: @tablet-width) {
+  .button {
+    width: 245px;
+    height: 52px;
+    padding: 16px;
+
+    .f-oswald(20px; 20px);
+  }
+
   .button--extra {
     width: 633px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 11px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .button--all {
+    width: 249px;
+    height: 40px;
+    margin-right: 5px;
+    padding: 10px;
+
+    .f-oswald(16px; 20px);
+  }
+
+  .button__form {
+    width: 283px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .button {
+  .button--all {
     width: 169px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 10px;
+
+    .f-oswald(16px; 20px);
+  }
+
+  .button--extra {
+    width: 245px;
+    margin: 0;
+    margin-right: 5px;
+  }
+
+  .button__form {
+    width: 568px;
+    margin-right: 22px;
   }
 }

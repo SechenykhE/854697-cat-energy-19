@@ -1,6 +1,10 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  width: 280px;
+  padding-top: 21px;
 }
 
 .copyright__link {
@@ -9,8 +13,31 @@
   color: #444444;
 }
 
+.copyright__link:active {
+  opacity: 0.3;
+}
+
+.copyright__image {
+  width: 27px;
+  height: 34px;
+}
+
+.copyright__image:hover path,
+.copyright__image:focus path {
+  fill: #68b738;
+}
+
+.copyright__image:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .copyright {
     justify-content: end;
+    width: auto;
+  }
+
+  .copyright__link {
+    margin-right: 22px;
   }
 }

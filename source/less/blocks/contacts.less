@@ -2,43 +2,151 @@
   background-color: #f2f2f2;
 }
 
-.contacts__slogan {
-  width: 140px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: normal;
-  color: #111111;
-  text-transform: uppercase;
-}
-
+.contacts__slogan,
 .contacts__address {
   width: 140px;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__address-street,
+.contacts__address-city {
+  margin: 0;
+  padding: 0;
 }
 
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 27px;
+  padding-top: 27px;
+}
+
+.contacts__slogan {
+  .f-oswald(16px; 20px);
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.contacts__address {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts__link {
+  position: relative;
+
+  display: block;
+  width: 320px;
+  height: 361px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.contacts__map {
+  position: relative;
+  top: -39px;
+  margin: 0 auto;
+
+  background-color: #f2f2f2;
+}
+
+.contacts__link::before {
+  position: absolute;
+  content: "";
+  top: 139px;
+  left: 129px;
+  z-index: 2;
+
+  width: 62px;
+  height: 53px;
+
+  background-image: url("/../../img/map-pin.png");
+  background-size: 62px 53px;
 }
 
 @media (min-width: @tablet-width) {
   .contacts {
+    padding-top: 38px;
+
+    background-color: #ffffff;
+  }
+
+  .contacts__wrapper {
+    width: 625px;
+    margin-bottom: 58px;
+  }
+
+  .contacts--inner {
     background-color: #f2f2f2;
   }
 
+  .contacts__link {
+    height: 396px;
+
+    background-color: #f2f2f2;
+  }
+
+  .contacts__map {
+    background-color: #f2f2f2;
+  }
+
+  .contacts__slogan,
   .contacts__address {
+    width: 160px;
+  }
+
+  .contacts__slogan {
+    .f-oswald(20px; 25px);
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    line-height: 20px;
     text-align: end;
+  }
+
+  .contacts__address-street {
+    margin-bottom: 18px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts {
+    position: relative;
+
     display: flex;
+    height: 400px;
   }
 
   .contacts__wrapper {
-    width: 570px;
-    background-color: white;
+    position: absolute;
+    content: "";
+    top: 95px;
+    left: 110px;
     z-index: 10;
+
+    width: 570px;
+    min-height: 201px;
+
+    background-color: white;
+    border: 1px solid #111111;
+  }
+
+  .contacts__slogan {
+    margin-top: 37px;
+    margin-left: 75px;
+  }
+
+  .contacts__address {
+    margin-top: 35px;
+    margin-right: 83px;
+
+    text-align: left;
+  }
+
+  .contacts__link {
+    height: 400px;
   }
 }
