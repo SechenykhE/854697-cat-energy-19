@@ -1,16 +1,78 @@
 .gift {
+  position: relative;
+
   width: 280px;
   height: 289px;
-  background: url("/../../img/gift-photo-mobile@1x.jpg");
+  margin-bottom: 35px;
+  background-image: url("/../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 64px;
+    left: 113px;
+
+    width: 55px;
+    height: 60px;
+
+    background-image: url("/../../img/icon-gift.svg");
+    fill: white;
+  }
 }
 
 .gift__text {
   width: 170px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 186px;
   text-align: center;
+
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .gift {
+    width: 708px;
+    height: 200px;
+    margin-bottom: 75px;
+
+    background-image: url("/../../img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+
+    &::before {
+      top: 64px;
+      left: 91px;
+    }
+  }
+
+  .gift__text {
+    padding-top: 72px;
+    text-align: left;
+    margin-left: 423px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gift {
+    margin: 0;
+    width: 245px;
+    height: 289px;
+
+    background-image: url("/../../img/gift-photo-desktop@1x.jpg");
+    background-repeat: no-repeat;
+
+    &::before {
+      top: 65px;
+      left: 96px;
+    }
+
+    .gift__text {
+      margin-left: 37px;
+      padding-top: 170px;
+      text-align: center;
+    }
+  }
 }

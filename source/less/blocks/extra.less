@@ -1,29 +1,129 @@
 .extra__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 24px;
-  line-height: 24px;
+  position: relative;
+  padding: 0;
+  padding-top: 28px;
+  margin: 0;
+  margin-bottom: 35px;
+
+  .f-oswald(24px; 24px);
   font-weight: normal;
   color: #111111;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 43px;
+    left: 247px;
+
+    width: 53px;
+    height: 3px;
+
+    background-color: #68b738;
+  }
 }
 
 .extra__list {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  .list-reset();
+  margin-bottom: 41px;
 }
 
 .extra__item {
-  height: 128px;
-  border-bottom: 1px solid #ededed;
-  border-top: 1px solid #ededed;
+  min-height: 128px;
+
+  border-top: @border;
+}
+
+.extra__item:last-child {
+  border-bottom: @border;
+}
+
+@media (min-width: @tablet-width) {
+  .extra--top {
+    margin-top: -101px;
+  }
+
+  .extra__list {
+    margin-bottom: 70px;
+  }
+
+  .extra__title {
+    margin-bottom: 81px;
+    padding-left: 37px;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after {
+      top: 51px;
+      left: 411px;
+
+      width: 100%;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 51px;
+      right: 710px;
+
+      min-width: 100%;
+      height: 3px;
+
+      background-color: #68b738;
+    }
+  }
+
+  .extra__item {
+    width: 708px;
+    min-height: 139px;
+    padding-top: 17px;
+    padding-right: 35px;
+    padding-left: 35px;
+
+    border: @border;
+    border-bottom: none;
+  }
+
+  .extra__item:last-child {
+    border-bottom: @border;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .extra--top {
+    margin-top: -96px;
+  }
+
+  .extra__title {
+    padding-left: 0;
+
+    &::after {
+      top: 51px;
+      left: 373px;
+
+      min-width: 100%;
+    }
+
+    &::before {
+      top: 51px;
+      right: 1260px;
+
+      min-width: 100%;
+    }
+  }
+
   .extra__item {
     display: flex;
+    width: 900px;
+    min-height: 72px;
+
+    border-right: none;
+    border-left: none;
   }
 
   .extra__wrapper {
     display: flex;
+    justify-content: space-between;
   }
 }
