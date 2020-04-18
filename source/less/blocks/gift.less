@@ -4,8 +4,22 @@
   width: 280px;
   height: 289px;
   margin-bottom: 35px;
+  padding-top: 171px;
+  padding-right: 45px;
+  padding-left: 45px;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+
   background-image: url("/../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("/../../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
 
   &::before {
     position: absolute;
@@ -21,37 +35,29 @@
   }
 }
 
-.gift__text {
-  width: 170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 186px;
-  text-align: center;
-
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-}
-
 @media (min-width: @tablet-width) {
   .gift {
     width: 708px;
     height: 200px;
     margin-bottom: 75px;
+    padding-top: 55px;
+    padding-right: 100px;
+    padding-left: 423px;
+
+    text-align: left;
 
     background-image: url("/../../img/gift-photo-tablet@1x.jpg");
     background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("/../../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px auto;
+    }
 
     &::before {
       top: 64px;
       left: 91px;
     }
-  }
-
-  .gift__text {
-    padding-top: 72px;
-    text-align: left;
-    margin-left: 423px;
   }
 }
 
@@ -60,19 +66,23 @@
     margin: 0;
     width: 245px;
     height: 289px;
+    margin-left: 75px;
+    padding-top: 170px;
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: center;
 
     background-image: url("/../../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
 
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("/../../img/gift-photo-desktop@2x.jpg");
+      background-size: 245px auto;
+    }
+
     &::before {
       top: 65px;
       left: 96px;
-    }
-
-    .gift__text {
-      margin-left: 37px;
-      padding-top: 170px;
-      text-align: center;
     }
   }
 }

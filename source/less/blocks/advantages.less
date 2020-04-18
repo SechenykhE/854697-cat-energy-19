@@ -90,12 +90,39 @@
   }
 
   .advantages__list {
+    position: relative;
+
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
     padding-bottom: 42px;
 
-    border-bottom: @border;
+    counter-reset: list1;
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: 100vw;
+      height: 1px;
+      background-color: #e6e6e6;
+    }
+  }
+
+  .advantages__item-number::before {
+    counter-increment: list1;
+    content: counter(list1);
+    position: absolute;
+
+    top: -42px;
+    right: 3px;
+    z-index: -1;
+
+    .f-oswald(281px; 281px);
+    color: #f2f2f2;
   }
 
   .advantages__item {
@@ -174,50 +201,6 @@
 
     background-image: url("/../../img/advantage-clock@1x.png");
   }
-
-  .advantages__item-one::before {
-    position: absolute;
-    content: "1";
-    top: -42px;
-    right: 21px;
-    z-index: -1;
-
-    .f-oswald(281px; 281px);
-    color: #f2f2f2;
-  }
-
-  .advantages__item-two::before {
-    position: absolute;
-    content: "2";
-    top: -42px;
-    right: 4px;
-    z-index: -1;
-
-    .f-oswald(281px; 281px);
-    color: #f2f2f2;
-  }
-
-  .advantages__item-three::before {
-    position: absolute;
-    content: "3";
-    top: -42px;
-    right: 3px;
-    z-index: -1;
-
-    .f-oswald(281px; 281px);
-    color: #f2f2f2;
-  }
-
-  .advantages__item-four::before {
-    position: absolute;
-    content: "4";
-    top: -42px;
-    right: 1px;
-    z-index: -1;
-
-    .f-oswald(281px; 281px);
-    color: #f2f2f2;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -230,6 +213,10 @@
     flex-wrap: wrap;
 
     border: none;
+
+    &::before {
+      display: none;
+    }
   }
 
   .advantages__item {

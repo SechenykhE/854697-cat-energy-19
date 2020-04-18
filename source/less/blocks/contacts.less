@@ -83,12 +83,27 @@
   }
 
   .contacts__link {
-    height: 396px;
+    min-width: 768px;
+    min-height: 397px;
 
     background-color: #f2f2f2;
   }
 
+  .contacts__link::before {
+    top: 148px;
+    left: 323px;
+
+    width: 122px;
+    height: 106px;
+
+    background-size: 122px 106px;
+  }
+
   .contacts__map {
+    width: 768px;
+    height: auto;
+    margin-top: 37px;
+
     background-color: #f2f2f2;
   }
 
@@ -118,6 +133,7 @@
 
     display: flex;
     height: 400px;
+    padding-top: 0;
   }
 
   .contacts__wrapper {
@@ -131,7 +147,6 @@
     min-height: 201px;
 
     background-color: white;
-    border: 1px solid #111111;
   }
 
   .contacts__slogan {
@@ -146,7 +161,23 @@
     text-align: left;
   }
 
-  .contacts__link {
-    height: 400px;
+  .contacts__link,
+  .contacts__map {
+    min-width: 1440px;
+    min-height: 400px;
+  }
+
+  .contacts__link::before {
+    top: 151px;
+    left: 1000px;
+
+    width: 122px;
+    height: 106px;
+
+    background-size: 122px 106px;
+  }
+
+  .contacts__map {
+    margin-top: 40px;
   }
 }
