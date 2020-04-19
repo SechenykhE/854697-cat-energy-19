@@ -129,18 +129,22 @@
 
 @media (min-width: @desktop-width) {
   .contacts {
-    position: relative;
-
     display: flex;
     height: 400px;
     padding-top: 0;
+  }
+
+  .contacts__wrapper-fix {
+    position: relative;
+    width: 1300px;
+    margin: 0 auto;
   }
 
   .contacts__wrapper {
     position: absolute;
     content: "";
     top: 95px;
-    left: 110px;
+    left: 41px;
     z-index: 10;
 
     width: 570px;
@@ -163,8 +167,15 @@
 
   .contacts__link,
   .contacts__map {
-    min-width: 1440px;
-    min-height: 400px;
+
+    margin: 0 auto;
+  }
+
+  .contacts__link {
+    width: 1270px;
+    height: 400px;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .contacts__link::before {
@@ -178,6 +189,8 @@
   }
 
   .contacts__map {
+    width: 1300px;
+    height: 400px;
     margin-top: 40px;
   }
 }
