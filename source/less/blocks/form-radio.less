@@ -97,17 +97,56 @@
   }
 
   .form-radio__text {
+    padding-left: 67px;
+
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .form-radio__input + label::before {
+    top: -9px;
+    left: 8px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .form-radio__input:checked + label::before {
+    top: -8px;
+    left: 9px;
+
+    width: 38px;
+    height: 38px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-radio {
     width: 570px;
+    margin-top: 0;
   }
 
   .form-radio__item {
     margin-left: 40px;
+  }
+
+  .form-radio__text {
+    padding-left: 27px;
+  }
+
+  .form-radio__input + label::before {
+    top: -9px;
+    left: -32px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .form-radio__input:checked + label::before {
+    top: -8px;
+    left: -31px;
+
+    width: 37px;
+    height: 37px;
   }
 }

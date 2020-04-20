@@ -19,13 +19,17 @@
 .form__list {
   list-style: none;
   .list-reset();
-  margin-bottom: 23px;
+  margin-bottom: 57px;
 }
 
 .form__item {
   display: flex;
   align-items: center;
   margin-bottom: 14px;
+}
+
+.form__list--contact {
+  margin-bottom: 25px;
 }
 
 .form__title {
@@ -39,6 +43,8 @@
 }
 
 .form__text {
+  position: relative;
+
   .f-oswald(16px; 18px);
   font-weight: normal;
   text-transform: uppercase;
@@ -75,7 +81,7 @@
   }
 
   &:active {
-    border: 1px solid #444444;
+    border: 2px solid #444444;
   }
 }
 
@@ -139,6 +145,7 @@
 .form__textarea {
   width: 280px;
   min-height: 150px;
+  margin-bottom: 28px;
   padding: 12px 13px;
 }
 
@@ -281,7 +288,7 @@
     width: 630px;
     min-height: 174px;
     margin-left: 40px;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     padding-top: 9px;
     padding-left: 18px;
   }
@@ -309,6 +316,10 @@
 @media (min-width: @desktop-width) {
   .form {
     padding-bottom: 62px;
+  }
+
+  .form__fieldset {
+    margin-bottom: 15px;
   }
 
   .form__fieldset--contact {
@@ -379,7 +390,7 @@
     width: 1220px;
     min-height: 174px;
     margin-left: 0;
-    margin-bottom: 17px;
+    margin-bottom: 49px;
   }
 
   .form__title--add {
