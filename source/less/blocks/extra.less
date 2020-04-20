@@ -1,21 +1,33 @@
-.extra__title {
-  position: relative;
-  padding: 0;
+.extra {
   padding-top: 28px;
-  margin: 0;
+  overflow: hidden;
+}
+
+.extra__title {
+  margin: 0 auto;
   margin-bottom: 35px;
+  padding: 0;
 
   .f-oswald(24px; 24px);
   font-weight: normal;
   color: #111111;
+}
+
+.extra__caption {
+  position: relative;
+  min-width: 223px;
+  padding-right: 24px;
+
+  background-color: #ffffff;
 
   &::after {
     position: absolute;
     content: "";
-    top: 43px;
-    left: 247px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -2;
 
-    width: 53px;
+    width: 100vw;
     height: 3px;
 
     background-color: #68b738;
@@ -48,26 +60,47 @@
   }
 
   .extra__title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 81px;
-    padding-left: 37px;
 
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .extra__caption {
+    position: relative;
+
+    min-width: 338px;
+    margin-left: -37px;
+    padding-right: 37px;
+    padding-left: 37px;
+
+    background-color: #ffffff;
 
     &::after {
-      top: 51px;
-      left: 411px;
+      position: absolute;
+      content: "";
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: -2;
 
-      width: 100%;
+      width: 100vw;
+      height: 3px;
+
+      background-color: #68b738;
     }
 
     &::before {
       position: absolute;
       content: "";
-      top: 51px;
-      right: 710px;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: -2;
 
-      min-width: 100%;
+      width: 100vw;
       height: 3px;
 
       background-color: #68b738;
@@ -97,20 +130,6 @@
 
   .extra__title {
     padding-left: 0;
-
-    &::after {
-      top: 51px;
-      left: 373px;
-
-      min-width: 100%;
-    }
-
-    &::before {
-      top: 51px;
-      right: 1260px;
-
-      min-width: 100%;
-    }
   }
 
   .extra__item {
