@@ -22,12 +22,16 @@
   height: 34px;
 }
 
-.copyright__image:hover path,
-.copyright__image:focus path {
+.copyright__image-htmlacademy {
+  fill: #666666;
+}
+
+.copyright__image:hover .copyright__image-htmlacademy,
+.copyright__image:focus .copyright__image-htmlacademy {
   fill: #68b738;
 }
 
-.copyright__image:active {
+.copyright__image:active .copyright__image-htmlacademy {
   opacity: 0.3;
 }
 
@@ -39,5 +43,10 @@
 
   .copyright__link {
     margin-right: 22px;
+  }
+
+  .copyright__image-htmlacademy {
+    width: 27px;
+    height: 34px;
   }
 }
