@@ -1,6 +1,7 @@
 .social__list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
 
@@ -14,7 +15,7 @@
 }
 
 .social__item {
-  margin-right: 40px;
+  margin-right: 38px;
 }
 
 .social__item:last-child {
@@ -34,12 +35,18 @@
   opacity: 0.3;
 }
 
+.social__link-icon--vk {
+  margin-left: 2px;
+}
+
 @media (min-width: @tablet-width) {
   .social .container {
     max-width: 325px;
   }
 
   .social__list {
+    padding-top: 19px;
+    padding-right: 15px;
     padding-left: 12px;
     margin-left: 22px;
     border: none;
@@ -58,5 +65,9 @@
   .social__link-icon--fb {
     width: 14px;
     height: 28px;
+  }
+
+  .social__item {
+    margin-right: 28px;
   }
 }

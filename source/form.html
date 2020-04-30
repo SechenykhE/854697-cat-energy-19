@@ -12,7 +12,7 @@
   </head>
   <body>
     <div style="display: none;">
-      <include src="build/img/sprite.svg"></include>
+      <include style="display: none;" src="build/img/sprite.svg"></include>
     </div>
 
     <header class="page-header container">
@@ -54,19 +54,19 @@
                 <label class="form__text" for="user-name">
                   Имя:<sup>*</sup>
                 </label>
-                <input class="form__input" type="text" placeholder="Барсик" id="user-name" required="">
+                <input class="form__input" type="text" placeholder="Барсик" id="user-name" required>
               </li>
               <li class="form__item">
                 <label class="form__text form__text--weight" for="weight">
                   Вес (кг):<sup>*</sup>
                 </label>
-                <input class="form__input" type="text" placeholder="7" id="weight" required="">
+                <input class="form__input" type="text" placeholder="7" id="weight" required>
               </li>
               <li class="form__item">
                 <label class="form__text form__text--age" for="age">
                   Возраст (лет):
                 </label>
-                <input class="form__input" type="text" placeholder="7" id="age" required="">
+                <input class="form__input" type="text" placeholder="7" id="age" required>
               </li>
             </ul>
           </fieldset>
@@ -75,7 +75,7 @@
             <legend class="visually-hidden">Выбор программы</legend>
             <ul class="form__list form-radio">
               <li class="form-radio__item">
-                <input class="visually-hidden form-radio__input" type="radio" name="program" value="losing weight" id="losing-weight" checked="">
+                <input class="visually-hidden form-radio__input" type="radio" name="program" value="losing weight" id="losing-weight" checked>
                 <label class="form-radio__text" for="losing-weight">
                   Похудение
                 </label>
@@ -105,7 +105,7 @@
               <label class="form__text" for="mail">
                 E-mail:<sup>*</sup>
               </label>
-              <input class="form__input form__input--contact form__input--mail" type="email" placeholder="kuklachev@gmail.com" id="mail" required="">
+              <input class="form__input form__input--contact form__input--mail" type="email" placeholder="kuklachev@gmail.com" id="mail" required>
               <svg class="form__input-icon form__input-icon--mail" width="17" height="13">
                 <use xlink:href="#icon-mail"></use>
               </svg>
@@ -114,7 +114,7 @@
               <label class="form__text" for="phone">
                 Телефон:<sup>*</sup>
               </label>
-              <input class="form__input form__input--contact form__input--phone" type="tel" placeholder="8 (960) 900-60-90" id="phone" required="">
+              <input class="form__input form__input--contact form__input--phone" type="tel" placeholder="8 (960) 900-60-90" id="phone" required>
               <svg class="form__input-icon form__input-icon--phone" width="20" height="20">
                 <use xlink:href="#icon-phone"></use>
               </svg>
@@ -137,7 +137,7 @@
           </legend>
           <ul class="form__list form__list--add form-checkbox">
             <li class="form-checkbox__item">
-              <input class="visually-hidden form-checkbox__input" type="checkbox" name="sweetener" id="sweetener" checked="">
+              <input class="visually-hidden form-checkbox__input" type="checkbox" name="sweetener" id="sweetener" checked>
               <label class="form-checkbox__text" for="sweetener">
                 Сахарозаменитель
               </label>
@@ -162,9 +162,9 @@
             </li>
           </ul>
         </fieldset>
-        <div class="form__wrapper--button">
+        <div class="form__wrapper-button">
           <button class="button button__form" type="submit">Отправить заявку</button>
-          <small><sup>*</sup> — Обязательные поля</small>
+          <small class="form__small"><sup>*</sup> — Обязательные поля</small>
         </div>
       </form>
     </main>
@@ -187,10 +187,11 @@
               <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-              <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Наш офис по адресу улица Большая <br> Конюшенная дом 19">
+              <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@1x.png 1x, img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Наш офис по адресу улица Большая <br> Конюшенная дом 19">
             </picture>
           </a>
         </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787258684!2d30.320853352061462!3d59.93871648178726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1588145885958!5m2!1sru!2sru" height="400" style="border: 0;" allowfullscreen=""></iframe>
       </section>
 
       <section class="footer-links">

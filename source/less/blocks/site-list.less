@@ -53,6 +53,7 @@
     margin-left: auto;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     flex-wrap: wrap;
   }
 
@@ -88,7 +89,7 @@
   .site-list__link--active::before {
     position: absolute;
     content: "";
-    top: 54px;
+    top: 56px;
     width: 100%;
     height: 2px;
     background-color: #68b738;
@@ -96,6 +97,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .site-list {
+    width: 610px;
+    justify-content: right;
+  }
+
   .site-list__item {
     margin-right: 34px;
   }
