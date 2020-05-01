@@ -1,5 +1,12 @@
-.contacts--inner {
+.contacts {
+  position: relative;
+  overflow: hidden;
+
   background-color: #f2f2f2;
+}
+
+.contacts--inner {
+  background: linear-gradient(180deg, #ffffff 40%, #f2f2f2 60%);
 }
 
 .contacts__slogan,
@@ -18,8 +25,8 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 27px;
-  padding-top: 27px;
+  margin-bottom: 25px;
+  padding-top: 28px;
 }
 
 .contacts__slogan {
@@ -35,13 +42,20 @@
 }
 
 .contacts__link {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
 
-  display: block;
   width: 320px;
   height: 361px;
   margin: 0 auto;
   overflow: hidden;
+}
+
+.contacts iframe {
+  width: 100vw;
+  height: 362px;
 }
 
 .contacts__map {
@@ -69,13 +83,12 @@
 @media (min-width: @tablet-width) {
   .contacts {
     padding-top: 38px;
-
-    background-color: #ffffff;
   }
 
   .contacts__wrapper {
     width: 625px;
     margin-bottom: 58px;
+    padding-top: 26px;
   }
 
   .contacts--inner {
@@ -84,7 +97,6 @@
 
   .contacts__link {
     min-width: 768px;
-    min-height: 397px;
 
     background-color: #f2f2f2;
   }
@@ -125,13 +137,20 @@
   .contacts__address-street {
     margin-bottom: 18px;
   }
+
+  .contacts iframe {
+    height: 396px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .contacts {
-    display: flex;
     height: 400px;
     padding-top: 0;
+  }
+
+  .contacts--inner {
+    margin-top: -143px;
   }
 
   .contacts__wrapper-fix {
@@ -142,13 +161,13 @@
 
   .contacts__wrapper {
     position: absolute;
-    content: "";
     top: 95px;
     left: 41px;
     z-index: 10;
 
     width: 570px;
     min-height: 201px;
+    padding-top: 28px;
 
     background-color: white;
   }
@@ -165,13 +184,8 @@
     text-align: left;
   }
 
-  .contacts__link,
-  .contacts__map {
-
-    margin: 0 auto;
-  }
-
   .contacts__link {
+    position: absolute;
     flex-shrink: 0;
     width: 1300px;
     overflow: hidden;
@@ -191,7 +205,7 @@
   }
 
   .contacts__map {
-    width: 1440px;
+    /*width: 1440px;*/
     height: 400px;
     margin-top: 40px;
     margin-left: auto;

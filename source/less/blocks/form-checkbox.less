@@ -39,7 +39,7 @@
   content: "";
 
   position: absolute;
-  top: 5px;
+  top: 2px;
   left: 5px;
 
   width: 21px;
@@ -59,6 +59,12 @@
 .form-checkbox__input:checked:active + label::before,
 .form-checkbox__input:checked:active + label::after {
   opacity: 0.3;
+}
+
+.form-checkbox__input:disabled + label,
+.form-checkbox__input:disabled + label::before,
+.form-checkbox__input:checked:disabled + label::before {
+  opacity: 0.5;
 }
 
 @media (min-width: @tablet-width) {
@@ -105,7 +111,7 @@
 @media (min-width: @desktop-width) {
   .form-checkbox {
     margin-right: 0;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
   }
 
   .form-checkbox__item {
