@@ -37,7 +37,6 @@
 
 .form__input-icon {
   position: absolute;
-  content: "";
   right: 15px;
 }
 
@@ -91,17 +90,16 @@
 
   border: 1px solid rgba(205, 205, 205, 0.5);
 
-  &:hover,
-  &:focus {
+  &:hover {
     border: 1px solid #cdcdcd;
   }
 
-  &:active {
+  &:focus {
     border: 2px solid #444444;
   }
 }
 
-.form__input:active + .form__input-icon {
+.form__input:focus + .form__input-icon {
   fill: #68b738;
 }
 
@@ -114,9 +112,6 @@
 }
 
 .form__input::placeholder {
-  .f-oswald(16px; 18px);
-  font-weight: normal;
-  text-transform: uppercase;
   color: #111111;
 }
 
@@ -180,23 +175,24 @@
   margin-bottom: 26px;
   padding: 12px 13px;
 
+  .f-oswald(16px; 18px);
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #444444;
+
   border: 1px solid rgba(205, 205, 205, 0.5);
 
-  &:hover,
-  &:focus {
+  &:hover {
     border: 1px solid #cdcdcd;
   }
 
-  &:active {
+  &:focus {
     border: 2px solid #444444;
   }
 }
 
 .form__textarea::placeholder {
-  .f-oswald(16px; 18px);
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #444444;
+  color: #111111;
 }
 
 .form__title--comment {
@@ -319,13 +315,12 @@
   }
 
   .form__input {
+    position: relative;
     height: 52px;
     margin-left: 18px;
     padding-top: 14px;
     padding-left: 18px;
-  }
 
-  .form__input::placeholder {
     font-size: 20px;
     line-height: 20px;
   }
@@ -353,9 +348,7 @@
     margin-bottom: 14px;
     padding-top: 9px;
     padding-left: 18px;
-  }
 
-  .form__textarea::placeholder {
     font-size: 20px;
     line-height: 30px;
   }
@@ -443,7 +436,12 @@
   }
 
   .form__input-icon {
+    bottom: 20px;
     right: 19px;
+  }
+
+  .form__input-icon--phone {
+    bottom: 16px;
   }
 
   .form__title--comment {
