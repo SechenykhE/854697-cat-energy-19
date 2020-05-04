@@ -6,7 +6,7 @@
 }
 
 .contacts--inner {
-  background: linear-gradient(180deg, #ffffff 40%, #f2f2f2 60%);
+  background: linear-gradient(180deg, #ffffff 23.5%, #f2f2f2 23.5%);
 }
 
 .contacts__slogan,
@@ -45,7 +45,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  z-index: -1;
+  z-index: 0;
 
   width: 320px;
   height: 361px;
@@ -54,6 +54,8 @@
 }
 
 .contacts iframe {
+  position: relative;
+  z-index: 4;
   width: 100vw;
   height: 362px;
 }
@@ -92,7 +94,7 @@
   }
 
   .contacts--inner {
-    background-color: #f2f2f2;
+    background: linear-gradient(180deg, #ffffff 33.5%, #f2f2f2 33.5%);
   }
 
   .contacts__link {
@@ -151,6 +153,7 @@
 
   .contacts--inner {
     margin-top: -143px;
+    background: linear-gradient(180deg, #f2f2f2 23.5%, #f2f2f2 23.5%);
   }
 
   .contacts__wrapper-fix {
@@ -196,7 +199,7 @@
 
   .contacts__link::before {
     top: 151px;
-    left: 930px;
+    left: 910px;
 
     width: 122px;
     height: 106px;
@@ -205,10 +208,14 @@
   }
 
   .contacts__map {
-    /*width: 1440px;*/
+    width: 1440px;
     height: 400px;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .contacts iframe {
+    height: 400px;
   }
 }
